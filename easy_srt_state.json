@@ -1,0 +1,14 @@
+{
+    "SrtBatchCounters": {
+        "SrtBatch 001": 0,
+        "字幕批次 001": 6
+    },
+    "SrtBatchPaths": {
+        "SrtBatch 001": "C:\\Users\\41456\\AppData\\Local\\Temp\\easyuse_test_3qg4297o",
+        "字幕批次 001": "C:\\Users\\41456\\Downloads\\Video\\分批字幕"
+    },
+    "SrtBatchRecursive": {
+        "SrtBatch 001": false,
+        "字幕批次 001": true
+    }
+}

@@ -1,0 +1,12 @@
+# Core libraries used by Easy-use-ex custom nodes.
+# torch and torchaudio are usually provided by ComfyUI itself.
+# FFmpeg is also required by the audio load/save nodes for fallback decoding
+# and encoding, but it is a system dependency rather than a pip package.
+numpy
+Pillow
+soundfile
+huggingface_hub
+qwen-asr==0.0.6
+pyannote.audio>=3.1.0
+whisperx>=3.1.1
+requests

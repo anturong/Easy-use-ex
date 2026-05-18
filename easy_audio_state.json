@@ -1,0 +1,18 @@
+{
+    "AudioBatchCounters": {
+        "AudioBatch 001": 0,
+        "音频批次 001": 0
+    },
+    "AudioBatchPaths": {
+        "AudioBatch 001": "C:\\Users\\41456\\Desktop\\spitl",
+        "音频批次 001": "C:\\Users\\41456\\Desktop\\spitl"
+    },
+    "AudioBatchPatterns": {
+        "AudioBatch 001": "*.ogg",
+        "音频批次 001": "*.mp3"
+    },
+    "AudioBatchRecursive": {
+        "AudioBatch 001": false,
+        "音频批次 001": true
+    }
+}

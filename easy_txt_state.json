@@ -1,0 +1,14 @@
+{
+    "TxtBatchCounters": {
+        "TxtBatch 001": 0,
+        "文本批次 001": 6
+    },
+    "TxtBatchPaths": {
+        "TxtBatch 001": "C:\\Users\\41456\\AppData\\Local\\Temp\\easyuse_test_3qg4297o",
+        "文本批次 001": "C:\\Users\\41456\\Downloads\\Video\\分批字幕"
+    },
+    "TxtBatchRecursive": {
+        "TxtBatch 001": false,
+        "文本批次 001": true
+    }
+}

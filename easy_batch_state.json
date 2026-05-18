@@ -1,0 +1,18 @@
+{
+    "BatchCounters": {
+        "Batch 001": 0,
+        "批次 001": 0
+    },
+    "BatchPaths": {
+        "Batch 001": "C:\\Users\\41456\\Desktop\\人造石",
+        "批次 001": "C:\\Users\\41456\\Desktop\\spitl"
+    },
+    "BatchPatterns": {
+        "Batch 001": "*",
+        "批次 001": "*"
+    },
+    "BatchRecursive": {
+        "Batch 001": true,
+        "批次 001": true
+    }
+}
