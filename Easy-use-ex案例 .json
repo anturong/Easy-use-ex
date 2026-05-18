@@ -1,0 +1,2951 @@
+{
+  "id": "06f750d3-995d-4678-a781-09b7d6bc1de6",
+  "revision": 0,
+  "last_node_id": 171,
+  "last_link_id": 213,
+  "nodes": [
+    {
+      "id": 26,
+      "type": "easy showAnything",
+      "pos": [
+        2482.4602112403772,
+        104.36347574671085
+      ],
+      "size": [
+        228.45403512042594,
+        142.48342299917977
+      ],
+      "flags": {},
+      "order": 36,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b5e31ef12ad9d0b187b545c2707735cc7d581c52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "{'waveform': tensor([[[-6.1035e-05, -6.1035e-05, -3.0518e-05,  ...,  1.8311e-04,\n           1.5259e-04,  1.5259e-04]]]), 'sample_rate': 22050}"
+      ]
+    },
+    {
+      "id": 22,
+      "type": "easy forLoopEnd",
+      "pos": [
+        2122.246798100981,
+        164.92637562870044
+      ],
+      "size": [
+        170,
+        90
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "流",
+          "name": "flow",
+          "shape": 5,
+          "type": "FLOW_CONTROL",
+          "link": 15
+        },
+        {
+          "label": "初始值1",
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "link": 175
+        },
+        {
+          "label": "初始值2",
+          "name": "initial_value2",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "值1",
+          "name": "value1",
+          "type": "*",
+          "links": [
+            18
+          ]
+        },
+        {
+          "label": "值2",
+          "name": "value2",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy forLoopEnd",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b5e31ef12ad9d0b187b545c2707735cc7d581c52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 10,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2790.6096651476428,
+        508.0576768636984
+      ],
+      "size": [
+        588.071487011719,
+        299.33331298828125
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "C:\\Users\\41456\\Downloads\\Video\\分批字幕\\角1\\0_002_角1.srt.mp3"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "Easy Use Save Audio Batch",
+      "pos": [
+        2095.3536955069962,
+        672.6562165628767
+      ],
+      "size": [
+        270,
+        294
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "音频",
+          "type": "AUDIO",
+          "link": 173
+        },
+        {
+          "name": "输出路径",
+          "type": "STRING",
+          "widget": {
+            "name": "输出路径"
+          },
+          "link": 151
+        },
+        {
+          "name": "文件名",
+          "type": "STRING",
+          "widget": {
+            "name": "文件名"
+          },
+          "link": 149
+        }
+      ],
+      "outputs": [
+        {
+          "name": "音频",
+          "type": "AUDIO",
+          "links": [
+            122
+          ]
+        },
+        {
+          "name": "文件路径",
+          "type": "STRING",
+          "links": [
+            62
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Easy Use Save Audio Batch"
+      },
+      "widgets_values": [
+        44100,
+        "[time(%Y-%m-%d)]",
+        "0",
+        "_",
+        "_",
+        4,
+        "否",
+        "mp3",
+        "前缀作为文件名",
+        "是"
+      ]
+    },
+    {
+      "id": 99,
+      "type": "easy showAnything",
+      "pos": [
+        538.5079594519397,
+        86.31363212902708
+      ],
+      "size": [
+        210,
+        88
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 123
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "0"
+      ]
+    },
+    {
+      "id": 104,
+      "type": "LoadImage",
+      "pos": [
+        -1938.5529089978486,
+        895.4870279451961
+      ],
+      "size": [
+        270,
+        314.00000000000006
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            126
+          ]
+        },
+        {
+          "label": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "Scandinavian Bedroom 4.5_Camera.001_Scandinavian Bedroom 4.5_色彩ID_0001.png",
+        "image"
+      ]
+    },
+    {
+      "id": 105,
+      "type": "MaskPreview",
+      "pos": [
+        -950.5354940540741,
+        968.837546948718
+      ],
+      "size": [
+        140,
+        246
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "遮罩",
+          "name": "mask",
+          "type": "MASK",
+          "link": 127
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "MaskPreview"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 103,
+      "type": "ColorID2MaskBatch",
+      "pos": [
+        -1543.561262699423,
+        892.9058889885495
+      ],
+      "size": [
+        400,
+        208
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 126
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [
+            127
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ColorID2MaskBatch"
+      },
+      "widgets_values": [
+        "#7481ae\n#ae765f\n#afa370",
+        0.05,
+        7,
+        0,
+        0,
+        false
+      ]
+    },
+    {
+      "id": 102,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -1156.8947536306368,
+        266.3077477803524
+      ],
+      "size": [
+        480.66668701171875,
+        301.3333740234376
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 125
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "1\n00:00:00,160 --> 00:00:02,799\n[角色3] 请，马某人这个县长，买了的。\n\n2\n00:00:03,040 --> 00:00:05,599\n[角色1] 嗯，买官就是为了挣钱，而且，\n\n3\n00:00:05,599 --> 00:00:08,160\n[角色1] 马某人不喜欢挣穷人的钱。\n\n4\n00:00:08,480 --> 00:00:09,919\n[角色1] 那你想挣谁的钱呢？\n\n5\n00:00:10,400 --> 00:00:12,080\n[角色1] 谁有钱就挣谁的。\n\n6\n00:00:12,320 --> 00:00:12,880\n[角色2] 那谁有钱？\n\n7\n00:00:13,279 --> 00:00:13,919\n[角色2] 你有钱。\n\n8\n00:00:14,080 --> 00:00:16,079\n[角色2] 哈哈哈，爽快。\n\n9\n00:00:16,480 --> 00:00:18,320\n[角色2] 县长看上什么了？\n\n10\n00:00:19,120 --> 00:00:22,879\n[角色2] 随便拿。\n\n11\n00:00:22,879 --> 00:00:23,039\n[角色1] 哈哈哈哈哈哈。\n\n12\n00:00:24,079 --> 00:00:25,839\n[角色1] 我不是土匪，我是县长。\n\n13\n00:00:26,239 --> 00:00:29,920\n[角色1] 县长挣钱得讲究个名正言顺才是。\n\n14\n00:00:29,920 --> 00:00:30,399\n[角色3] 说得好。\n\n15\n00:00:31,039 --> 00:00:34,079\n[角色3] 我们俄城有两大家族，都是把人卖到America修铁路，\n\n16\n00:00:34,079 --> 00:00:37,119\n[角色3] 挣的都是。\n\n17\n00:00:37,840 --> 00:00:40,000\n[角色3] 到了，还说到了的事。\n\n18\n00:00:40,000 --> 00:00:43,520\n[角色3] no no no no no，到了，美国人用的钱。\n\n19\n00:00:44,000 --> 00:00:46,079\n[角色3] 到了，有no，到了，到了。\n\n20\n00:00:46,240 --> 00:00:50,000\n[角色3] 黄老爷一来，钱就到了。"
+      ]
+    },
+    {
+      "id": 91,
+      "type": "PreviewAudio",
+      "pos": [
+        2485.9145443096654,
+        356.85455772065046
+      ],
+      "size": [
+        270,
+        88
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 122
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 40,
+      "type": "Easy Use Dubbing Automation",
+      "pos": [
+        804.3956117329452,
+        212.81685541617804
+      ],
+      "size": [
+        390.31999999999994,
+        478.78
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "配音1_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 47
+        },
+        {
+          "name": "配音2_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 208
+        },
+        {
+          "name": "配音3_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音4_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音5_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音6_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音7_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音8_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音9_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音10_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "兜底音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "触发路径",
+          "type": "STRING",
+          "widget": {
+            "name": "触发路径"
+          },
+          "link": 150
+        }
+      ],
+      "outputs": [
+        {
+          "name": "匹配音频",
+          "type": "AUDIO",
+          "links": [
+            171
+          ]
+        },
+        {
+          "name": "匹配路径",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "是否命中",
+          "type": "BOOLEAN",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Easy Use Dubbing Automation"
+      },
+      "widgets_values": [
+        "",
+        "文件夹匹配",
+        "C:\\Users\\41456\\Downloads\\Video\\分批字幕\\角色1\nC:\\Users\\41456\\Downloads\\Video\\分批字幕\\角色2"
+      ]
+    },
+    {
+      "id": 131,
+      "type": "Easy Use Load Srt Batch",
+      "pos": [
+        -88.20888695160941,
+        608.7317390416042
+      ],
+      "size": [
+        270,
+        286
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "索引",
+          "type": "INT",
+          "widget": {
+            "name": "索引"
+          },
+          "link": 147
+        }
+      ],
+      "outputs": [
+        {
+          "name": "字幕文本",
+          "type": "STRING",
+          "links": [
+            148,
+            161
+          ]
+        },
+        {
+          "name": "文件名",
+          "type": "STRING",
+          "links": [
+            149
+          ]
+        },
+        {
+          "name": "角色名",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "输出路径",
+          "type": "STRING",
+          "links": [
+            150,
+            151,
+            155
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Easy Use Load Srt Batch"
+      },
+      "widgets_values": [
+        "顺序SRT",
+        0,
+        0,
+        "字幕批次 001",
+        "C:\\Users\\41456\\Downloads\\Video\\分批字幕",
+        "移除时间输出",
+        "移除角色标签",
+        true
+      ]
+    },
+    {
+      "id": 141,
+      "type": "easy downloadIndexTTSAndLoadModel",
+      "pos": [
+        1026.7190083364744,
+        963.6098722632256
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "开始",
+          "name": "start",
+          "shape": 7,
+          "type": "*",
+          "link": null
+        },
+        {
+          "label": "模型",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "label": "下载来源",
+          "name": "download_from",
+          "type": "COMBO",
+          "widget": {
+            "name": "download_from"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IndexTTS模型",
+          "name": "indextts_model",
+          "type": "EASY_INDEXTTS_MODEL",
+          "links": [
+            167
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-indextts2",
+        "ver": "e82998572e0604be9c64f9b91f38dd611f79e4b5",
+        "Node name for S&R": "easy downloadIndexTTSAndLoadModel"
+      },
+      "widgets_values": [
+        "IndexTTS-2",
+        "modelscope"
+      ]
+    },
+    {
+      "id": 67,
+      "type": "VRAMCleanup",
+      "pos": [
+        569.9553491425439,
+        884.7761912336184
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "任意",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 161
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VRAMCleanup"
+      },
+      "widgets_values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": 140,
+      "type": "VRAMCleanup",
+      "pos": [
+        940.1780086460135,
+        1389.488327338787
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "任意",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 167
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "name": "output",
+          "type": "*",
+          "links": [
+            169
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VRAMCleanup"
+      },
+      "widgets_values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": 84,
+      "type": "ShowText|pysssss",
+      "pos": [
+        281.9749814255298,
+        1240.6685696010131
+      ],
+      "size": [
+        318,
+        160.00003051757815
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 155
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "C:\\Users\\41456\\Downloads\\Video\\分批字幕\\角色1\\"
+      ]
+    },
+    {
+      "id": 139,
+      "type": "easy indexTTSGenerate",
+      "pos": [
+        1428.3710400599105,
+        947.3365804339104
+      ],
+      "size": [
+        400,
+        460
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "IndexTTS模型",
+          "name": "indextts_model",
+          "type": "EASY_INDEXTTS_MODEL",
+          "link": 169
+        },
+        {
+          "label": "参考音频(单音色)",
+          "name": "reference_audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 171
+        },
+        {
+          "label": "参考音频(多音色)",
+          "name": "reference_audios",
+          "shape": 7,
+          "type": "AUDIOS",
+          "link": null
+        },
+        {
+          "label": "情感配置",
+          "name": "emotions",
+          "shape": 7,
+          "type": "EASY_INDEXTTS_EMOTIONS",
+          "link": null
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 174
+        }
+      ],
+      "outputs": [
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            164,
+            173,
+            175
+          ]
+        },
+        {
+          "label": "随机种子",
+          "name": "seed",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "字幕",
+          "name": "subtitle",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "subtitle_text",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-indextts2",
+        "ver": "e82998572e0604be9c64f9b91f38dd611f79e4b5",
+        "Node name for S&R": "easy indexTTSGenerate"
+      },
+      "widgets_values": [
+        "要是非得把这份稀罕，给它定个期限的话……",
+        false,
+        true,
+        0.8,
+        0.9,
+        30,
+        3,
+        10,
+        0,
+        1815,
+        120,
+        1,
+        2445497592,
+        "randomize"
+      ]
+    },
+    {
+      "id": 126,
+      "type": "ShowText|pysssss",
+      "pos": [
+        623.2318586204218,
+        1073.1305499290966
+      ],
+      "size": [
+        464,
+        150.6666259765625
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 148
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            174
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "这人世间最难受、最憋屈的事儿，真就莫过于这个了。"
+      ]
+    },
+    {
+      "id": 136,
+      "type": "PreviewAudio",
+      "pos": [
+        2669.0745687684794,
+        1365.1746098900087
+      ],
+      "size": [
+        270,
+        88
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 164
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 147,
+      "type": "easy showAnything",
+      "pos": [
+        2559.5691944371306,
+        2087.8087027530196
+      ],
+      "size": [
+        228.45403512042594,
+        142.48342299917977
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "输入任何",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 179
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b5e31ef12ad9d0b187b545c2707735cc7d581c52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "{'waveform': tensor([[[-6.1035e-05, -6.1035e-05, -3.0518e-05,  ...,  1.8311e-04,\n           1.5259e-04,  1.5259e-04]]]), 'sample_rate': 22050}"
+      ]
+    },
+    {
+      "id": 148,
+      "type": "easy forLoopEnd",
+      "pos": [
+        2199.355781297733,
+        2148.371602635009
+      ],
+      "size": [
+        170,
+        90
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "流",
+          "name": "flow",
+          "shape": 5,
+          "type": "FLOW_CONTROL",
+          "link": 180
+        },
+        {
+          "label": "初始值1",
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "link": 201
+        },
+        {
+          "label": "初始值2",
+          "name": "initial_value2",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "值1",
+          "name": "value1",
+          "type": "*",
+          "links": [
+            179
+          ]
+        },
+        {
+          "label": "值2",
+          "name": "value2",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy forLoopEnd",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b5e31ef12ad9d0b187b545c2707735cc7d581c52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 154,
+      "type": "PreviewAudio",
+      "pos": [
+        2563.023527506419,
+        2340.2997847269594
+      ],
+      "size": [
+        270,
+        88
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 188
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 163,
+      "type": "ShowText|pysssss",
+      "pos": [
+        700.3408418171731,
+        3056.5757769354054
+      ],
+      "size": [
+        464,
+        150.6666259765625
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 198
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            206
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "等彻底整没了、再也找不着了，我才后老悔。"
+      ]
+    },
+    {
+      "id": 149,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2535.9535883443955,
+        2681.543083870008
+      ],
+      "size": [
+        588.071487011719,
+        299.33331298828125
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 182
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "C:\\Users\\41456\\Downloads\\Video\\分批字幕\\角色2\\0_010_角色2.srt.mp3"
+      ]
+    },
+    {
+      "id": 160,
+      "type": "VRAMCleanup",
+      "pos": [
+        1237.4626036347574,
+        3304.265547252811
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "任意",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 206
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "name": "output",
+          "type": "*",
+          "links": [
+            207
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VRAMCleanup"
+      },
+      "widgets_values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": 5,
+      "type": "LoadAudio",
+      "pos": [
+        322.0184591279192,
+        208.90463453141675
+      ],
+      "size": [
+        270,
+        136
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "音频",
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            47
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "蜡笔小新.mp3",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 165,
+      "type": "LoadAudio",
+      "pos": [
+        303.19655942735716,
+        396.71345312514217
+      ],
+      "size": [
+        270,
+        136
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "音频",
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            208
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "天津话.wav",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 24,
+      "type": "easy forLoopStart",
+      "pos": [
+        -94.48745751773586,
+        398.7916456806052
+      ],
+      "size": [
+        270,
+        120
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "初始值1",
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "link": 17
+        },
+        {
+          "label": "总量",
+          "name": "total",
+          "type": "INT",
+          "widget": {
+            "name": "total"
+          },
+          "link": null
+        },
+        {
+          "label": "初始值2",
+          "name": "initial_value2",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "流",
+          "name": "flow",
+          "shape": 5,
+          "type": "FLOW_CONTROL",
+          "links": [
+            15
+          ]
+        },
+        {
+          "label": "索引",
+          "name": "index",
+          "type": "INT",
+          "links": [
+            123,
+            147
+          ]
+        },
+        {
+          "label": "值1",
+          "name": "value1",
+          "type": "*",
+          "links": null
+        },
+        {
+          "label": "值2",
+          "name": "value2",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy forLoopStart",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b5e31ef12ad9d0b187b545c2707735cc7d581c52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        17
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 25,
+      "type": "Int",
+      "pos": [
+        -380.3597376473033,
+        224.72943972427018
+      ],
+      "size": [
+        270,
+        60
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "整数",
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            17
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int",
+        "cnr_id": "ComfyLiterals",
+        "ver": "bdddb08ca82d90d75d97b1d437a652e0284a32ac",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "0"
+      ]
+    },
+    {
+      "id": 153,
+      "type": "easy forLoopStart",
+      "pos": [
+        -16.845864627069126,
+        2203.292629145011
+      ],
+      "size": [
+        270,
+        120
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "初始值1",
+          "name": "initial_value1",
+          "shape": 7,
+          "type": "*",
+          "link": 187
+        },
+        {
+          "label": "总量",
+          "name": "total",
+          "type": "INT",
+          "widget": {
+            "name": "total"
+          },
+          "link": null
+        },
+        {
+          "label": "初始值2",
+          "name": "initial_value2",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "流",
+          "name": "flow",
+          "shape": 5,
+          "type": "FLOW_CONTROL",
+          "links": [
+            180
+          ]
+        },
+        {
+          "label": "索引",
+          "name": "index",
+          "type": "INT",
+          "links": [
+            191
+          ]
+        },
+        {
+          "label": "值1",
+          "name": "value1",
+          "type": "*",
+          "links": null
+        },
+        {
+          "label": "值2",
+          "name": "value2",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy forLoopStart",
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b5e31ef12ad9d0b187b545c2707735cc7d581c52",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        17
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 152,
+      "type": "Int",
+      "pos": [
+        -395.5809706485532,
+        2156.2478037666765
+      ],
+      "size": [
+        270,
+        60
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "整数",
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            187
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Int",
+        "cnr_id": "ComfyLiterals",
+        "ver": "bdddb08ca82d90d75d97b1d437a652e0284a32ac",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "0"
+      ]
+    },
+    {
+      "id": 159,
+      "type": "VRAMCleanup",
+      "pos": [
+        647.0643323392956,
+        2868.221418239927
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "任意",
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 192
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出",
+          "name": "output",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VRAMCleanup"
+      },
+      "widgets_values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": 146,
+      "type": "PreviewAudio",
+      "pos": [
+        2339.6451510575994,
+        3324.4022983216196
+      ],
+      "size": [
+        270,
+        88
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 178
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 168,
+      "type": "PreviewAudio",
+      "pos": [
+        1639.5118578036327,
+        2317.3086439997605
+      ],
+      "size": [
+        270,
+        88
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "音频",
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 210
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PreviewAudio"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 101,
+      "type": "Easy Use SubCast Editor",
+      "pos": [
+        -1776.9459915364962,
+        280.3930837768306
+      ],
+      "size": [
+        420,
+        280
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "srt_text",
+          "type": "STRING",
+          "links": [
+            125
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Easy Use SubCast Editor"
+      },
+      "widgets_values": [
+        "1\n00:00:01,000 --> 00:00:08,000\n[角色2] 哎呀妈呀…… 早先有一份贼拉真心的感情，就摆我眼皮子底下，我愣是一点没当回事。\n\n2\n00:00:08,000 --> 00:00:13,000\n[小新] 等彻底整没了、再也找不着了，我才后老悔。\n\n3\n00:00:13,000 --> 00:00:17,000\n[小新] 这人世间最难受、最憋屈的事儿，真就莫过于这个了。\n\n4\n00:00:18,000 --> 00:00:22,000\n[小新] 老天但凡能再给我一回机会嗷，\n\n5\n00:00:22,000 --> 00:00:27,000\n[小新] 我铁定跟那老妹儿掏心窝子说仨字：俺贼拉稀罕你。\n\n6\n00:00:28,000 --> 00:00:32,000\n[小新] 要是非得把这份稀罕，给它定个期限的话……\n\n7\n00:00:32,000 --> 00:00:35,000\n[小新] 那我就想…… 一万年。\n\n8\n00:00:36,000 --> 00:00:41,000\n[小新] 我的意中人儿呐，那必须是盖世英雄。\n\n9\n00:00:41,000 --> 00:00:45,000\n[角色2] 早晚有一天，他得黄袍加身来娶我。\n\n10\n00:00:45,000 --> 00:00:50,000\n[角色2] 开头儿我猜着了，可就这个结局…… 我是万万没料到。\n\n11\n00:00:51,000 --> 00:00:54,000\n[角色2] 你现在说这些有嘛用啊？\n\n12\n00:00:54,000 --> 00:00:58,000\n[角色2] 当初不懂珍惜，这会儿后悔，晚啦。\n\n13\n00:00:59,000 --> 01:00:02,000\n[小新] 一万年？你这不纯属做梦嘛。\n\n14\n01:00:02,000 --> 01:00:07,000\n[角色2] 人这一辈子就短短几十年，爱恨纠葛，一眨眼就过去啦。\n\n15\n01:00:07,000 --> 01:00:10,000\n[小新] 眼前的人你都留不住，还扯嘛天长地久？\n\n16\n01:00:10,000 --> 01:00:14,000\n[角色2] 穿上美团，你就不能好好爱我；放下美团，你又养不起我。\n\n17\n01:00:14,000 --> 01:00:17,000\n[角色2] 从头到尾啊，你压根儿就没得选。",
+        "",
+        ""
+      ],
+      "easyuse_subcast_data": {
+        "sourceText": "1\n00:00:01,000 --> 00:00:08,000\n[角色2] 哎呀妈呀…… 早先有一份贼拉真心的感情，就摆我眼皮子底下，我愣是一点没当回事。\n\n2\n00:00:08,000 --> 00:00:13,000\n[小新] 等彻底整没了、再也找不着了，我才后老悔。\n\n3\n00:00:13,000 --> 00:00:17,000\n[小新] 这人世间最难受、最憋屈的事儿，真就莫过于这个了。\n\n4\n00:00:18,000 --> 00:00:22,000\n[小新] 老天但凡能再给我一回机会嗷，\n\n5\n00:00:22,000 --> 00:00:27,000\n[小新] 我铁定跟那老妹儿掏心窝子说仨字：俺贼拉稀罕你。\n\n6\n00:00:28,000 --> 00:00:32,000\n[小新] 要是非得把这份稀罕，给它定个期限的话……\n\n7\n00:00:32,000 --> 00:00:35,000\n[小新] 那我就想…… 一万年。\n\n8\n00:00:36,000 --> 00:00:41,000\n[小新] 我的意中人儿呐，那必须是盖世英雄。\n\n9\n00:00:41,000 --> 00:00:45,000\n[角色2] 早晚有一天，他得黄袍加身来娶我。\n\n10\n00:00:45,000 --> 00:00:50,000\n[角色2] 开头儿我猜着了，可就这个结局…… 我是万万没料到。\n\n11\n00:00:51,000 --> 00:00:54,000\n[角色2] 你现在说这些有嘛用啊？\n\n12\n00:00:54,000 --> 00:00:58,000\n[角色2] 当初不懂珍惜，这会儿后悔，晚啦。\n\n13\n00:00:59,000 --> 01:00:02,000\n[小新] 一万年？你这不纯属做梦嘛。\n\n14\n01:00:02,000 --> 01:00:07,000\n[角色2] 人这一辈子就短短几十年，爱恨纠葛，一眨眼就过去啦。\n\n15\n01:00:07,000 --> 01:00:10,000\n[小新] 眼前的人你都留不住，还扯嘛天长地久？\n\n16\n01:00:10,000 --> 01:00:14,000\n[角色2] 穿上美团，你就不能好好爱我；放下美团，你又养不起我。\n\n17\n01:00:14,000 --> 01:00:17,000\n[角色2] 从头到尾啊，你压根儿就没得选。",
+        "fileName": "大话西游改.srt",
+        "subtitles": [
+          {
+            "index": 1,
+            "startRaw": "00:00:01,000",
+            "endRaw": "00:00:08,000",
+            "start": "00:00:01.000",
+            "end": "00:00:08.000",
+            "character": "角色2",
+            "text": "哎呀妈呀…… 早先有一份贼拉真心的感情，就摆我眼皮子底下，我愣是一点没当回事。",
+            "rawText": "[角色1] 哎呀妈呀…… 早先有一份贼拉真心的感情，就摆我眼皮子底下，我愣是一点没当回事。"
+          },
+          {
+            "index": 2,
+            "startRaw": "00:00:08,000",
+            "endRaw": "00:00:13,000",
+            "start": "00:00:08.000",
+            "end": "00:00:13.000",
+            "character": "小新",
+            "text": "等彻底整没了、再也找不着了，我才后老悔。",
+            "rawText": "[角色1] 等彻底整没了、再也找不着了，我才后老悔。"
+          },
+          {
+            "index": 3,
+            "startRaw": "00:00:13,000",
+            "endRaw": "00:00:17,000",
+            "start": "00:00:13.000",
+            "end": "00:00:17.000",
+            "character": "小新",
+            "text": "这人世间最难受、最憋屈的事儿，真就莫过于这个了。",
+            "rawText": "[角色1] 这人世间最难受、最憋屈的事儿，真就莫过于这个了。"
+          },
+          {
+            "index": 4,
+            "startRaw": "00:00:18,000",
+            "endRaw": "00:00:22,000",
+            "start": "00:00:18.000",
+            "end": "00:00:22.000",
+            "character": "小新",
+            "text": "老天但凡能再给我一回机会嗷，",
+            "rawText": "[角色1] 老天但凡能再给我一回机会嗷，"
+          },
+          {
+            "index": 5,
+            "startRaw": "00:00:22,000",
+            "endRaw": "00:00:27,000",
+            "start": "00:00:22.000",
+            "end": "00:00:27.000",
+            "character": "小新",
+            "text": "我铁定跟那老妹儿掏心窝子说仨字：俺贼拉稀罕你。",
+            "rawText": "[角色1] 我铁定跟那老妹儿掏心窝子说仨字：俺贼拉稀罕你。"
+          },
+          {
+            "index": 6,
+            "startRaw": "00:00:28,000",
+            "endRaw": "00:00:32,000",
+            "start": "00:00:28.000",
+            "end": "00:00:32.000",
+            "character": "小新",
+            "text": "要是非得把这份稀罕，给它定个期限的话……",
+            "rawText": "[角色1] 要是非得把这份稀罕，给它定个期限的话……"
+          },
+          {
+            "index": 7,
+            "startRaw": "00:00:32,000",
+            "endRaw": "00:00:35,000",
+            "start": "00:00:32.000",
+            "end": "00:00:35.000",
+            "character": "小新",
+            "text": "那我就想…… 一万年。",
+            "rawText": "[角色1] 那我就想…… 一万年。"
+          },
+          {
+            "index": 8,
+            "startRaw": "00:00:36,000",
+            "endRaw": "00:00:41,000",
+            "start": "00:00:36.000",
+            "end": "00:00:41.000",
+            "character": "小新",
+            "text": "我的意中人儿呐，那必须是盖世英雄。",
+            "rawText": "[角色2] 我的意中人儿呐，那必须是盖世英雄。"
+          },
+          {
+            "index": 9,
+            "startRaw": "00:00:41,000",
+            "endRaw": "00:00:45,000",
+            "start": "00:00:41.000",
+            "end": "00:00:45.000",
+            "character": "角色2",
+            "text": "早晚有一天，他得黄袍加身来娶我。",
+            "rawText": "[角色2] 早晚有一天，他得黄袍加身来娶我。"
+          },
+          {
+            "index": 10,
+            "startRaw": "00:00:45,000",
+            "endRaw": "00:00:50,000",
+            "start": "00:00:45.000",
+            "end": "00:00:50.000",
+            "character": "角色2",
+            "text": "开头儿我猜着了，可就这个结局…… 我是万万没料到。",
+            "rawText": "[角色2] 开头儿我猜着了，可就这个结局…… 我是万万没料到。"
+          },
+          {
+            "index": 11,
+            "startRaw": "00:00:51,000",
+            "endRaw": "00:00:54,000",
+            "start": "00:00:51.000",
+            "end": "00:00:54.000",
+            "character": "角色2",
+            "text": "你现在说这些有嘛用啊？",
+            "rawText": "[角色2] 你现在说这些有嘛用啊？"
+          },
+          {
+            "index": 12,
+            "startRaw": "00:00:54,000",
+            "endRaw": "00:00:58,000",
+            "start": "00:00:54.000",
+            "end": "00:00:58.000",
+            "character": "角色2",
+            "text": "当初不懂珍惜，这会儿后悔，晚啦。",
+            "rawText": "[角色2] 当初不懂珍惜，这会儿后悔，晚啦。"
+          },
+          {
+            "index": 13,
+            "startRaw": "00:00:59,000",
+            "endRaw": "01:00:02,000",
+            "start": "00:00:59.000",
+            "end": "01:00:02.000",
+            "character": "小新",
+            "text": "一万年？你这不纯属做梦嘛。",
+            "rawText": "[角色2] 一万年？你这不纯属做梦嘛。"
+          },
+          {
+            "index": 14,
+            "startRaw": "01:00:02,000",
+            "endRaw": "01:00:07,000",
+            "start": "01:00:02.000",
+            "end": "01:00:07.000",
+            "character": "角色2",
+            "text": "人这一辈子就短短几十年，爱恨纠葛，一眨眼就过去啦。",
+            "rawText": "[角色2] 人这一辈子就短短几十年，爱恨纠葛，一眨眼就过去啦。"
+          },
+          {
+            "index": 15,
+            "startRaw": "01:00:07,000",
+            "endRaw": "01:00:10,000",
+            "start": "01:00:07.000",
+            "end": "01:00:10.000",
+            "character": "小新",
+            "text": "眼前的人你都留不住，还扯嘛天长地久？",
+            "rawText": "[角色2] 眼前的人你都留不住，还扯嘛天长地久？"
+          },
+          {
+            "index": 16,
+            "startRaw": "01:00:10,000",
+            "endRaw": "01:00:14,000",
+            "start": "01:00:10.000",
+            "end": "01:00:14.000",
+            "character": "角色2",
+            "text": "穿上美团，你就不能好好爱我；放下美团，你又养不起我。",
+            "rawText": "[角色2] 穿上美团，你就不能好好爱我；放下美团，你又养不起我。"
+          },
+          {
+            "index": 17,
+            "startRaw": "01:00:14,000",
+            "endRaw": "01:00:17,000",
+            "start": "01:00:14.000",
+            "end": "01:00:17.000",
+            "character": "角色2",
+            "text": "从头到尾啊，你压根儿就没得选。",
+            "rawText": "[角色2] 从头到尾啊，你压根儿就没得选。"
+          }
+        ],
+        "chars": [
+          {
+            "name": "小新",
+            "color": "#f59e0b"
+          },
+          {
+            "name": "角色2",
+            "color": "#10b981"
+          }
+        ],
+        "openSnapshot": {
+          "sourceText": "1\r\n00:00:01,000 --> 00:00:08,000\r\n[角色1] 哎呀妈呀…… 早先有一份贼拉真心的感情，就摆我眼皮子底下，我愣是一点没当回事。\r\n\r\n2\r\n00:00:08,000 --> 00:00:13,000\r\n[角色1] 等彻底整没了、再也找不着了，我才后老悔。\r\n\r\n3\r\n00:00:13,000 --> 00:00:17,000\r\n[角色1] 这人世间最难受、最憋屈的事儿，真就莫过于这个了。\r\n\r\n4\r\n00:00:18,000 --> 00:00:22,000\r\n[角色1] 老天但凡能再给我一回机会嗷，\r\n\r\n5\r\n00:00:22,000 --> 00:00:27,000\r\n[角色1] 我铁定跟那老妹儿掏心窝子说仨字：俺贼拉稀罕你。\r\n\r\n6\r\n00:00:28,000 --> 00:00:32,000\r\n[角色1] 要是非得把这份稀罕，给它定个期限的话……\r\n\r\n7\r\n00:00:32,000 --> 00:00:35,000\r\n[角色1] 那我就想…… 一万年。\r\n\r\n8\r\n00:00:36,000 --> 00:00:41,000\r\n[角色2] 我的意中人儿呐，那必须是盖世英雄。\r\n\r\n9\r\n00:00:41,000 --> 00:00:45,000\r\n[角色2] 早晚有一天，他得黄袍加身来娶我。\r\n\r\n10\r\n00:00:45,000 --> 00:00:50,000\r\n[角色2] 开头儿我猜着了，可就这个结局…… 我是万万没料到。\r\n\r\n11\r\n00:00:51,000 --> 00:00:54,000\r\n[角色2] 你现在说这些有嘛用啊？\r\n\r\n12\r\n00:00:54,000 --> 00:00:58,000\r\n[角色2] 当初不懂珍惜，这会儿后悔，晚啦。\r\n\r\n13\r\n00:00:59,000 --> 01:00:02,000\r\n[角色2] 一万年？你这不纯属做梦嘛。\r\n\r\n14\r\n01:00:02,000 --> 01:00:07,000\r\n[角色2] 人这一辈子就短短几十年，爱恨纠葛，一眨眼就过去啦。\r\n\r\n15\r\n01:00:07,000 --> 01:00:10,000\r\n[角色2] 眼前的人你都留不住，还扯嘛天长地久？\r\n\r\n16\r\n01:00:10,000 --> 01:00:14,000\r\n[角色2] 穿上美团，你就不能好好爱我；放下美团，你又养不起我。\r\n\r\n17\r\n01:00:14,000 --> 01:00:17,000\r\n[角色2] 从头到尾啊，你压根儿就没得选。\r\n",
+          "fileName": "大话西游改.srt",
+          "subtitles": [
+            {
+              "index": 1,
+              "startRaw": "00:00:01,000",
+              "endRaw": "00:00:08,000",
+              "start": "00:00:01.000",
+              "end": "00:00:08.000",
+              "character": "角色1",
+              "text": "哎呀妈呀…… 早先有一份贼拉真心的感情，就摆我眼皮子底下，我愣是一点没当回事。",
+              "rawText": "[角色1] 哎呀妈呀…… 早先有一份贼拉真心的感情，就摆我眼皮子底下，我愣是一点没当回事。"
+            },
+            {
+              "index": 2,
+              "startRaw": "00:00:08,000",
+              "endRaw": "00:00:13,000",
+              "start": "00:00:08.000",
+              "end": "00:00:13.000",
+              "character": "角色1",
+              "text": "等彻底整没了、再也找不着了，我才后老悔。",
+              "rawText": "[角色1] 等彻底整没了、再也找不着了，我才后老悔。"
+            },
+            {
+              "index": 3,
+              "startRaw": "00:00:13,000",
+              "endRaw": "00:00:17,000",
+              "start": "00:00:13.000",
+              "end": "00:00:17.000",
+              "character": "角色1",
+              "text": "这人世间最难受、最憋屈的事儿，真就莫过于这个了。",
+              "rawText": "[角色1] 这人世间最难受、最憋屈的事儿，真就莫过于这个了。"
+            },
+            {
+              "index": 4,
+              "startRaw": "00:00:18,000",
+              "endRaw": "00:00:22,000",
+              "start": "00:00:18.000",
+              "end": "00:00:22.000",
+              "character": "角色1",
+              "text": "老天但凡能再给我一回机会嗷，",
+              "rawText": "[角色1] 老天但凡能再给我一回机会嗷，"
+            },
+            {
+              "index": 5,
+              "startRaw": "00:00:22,000",
+              "endRaw": "00:00:27,000",
+              "start": "00:00:22.000",
+              "end": "00:00:27.000",
+              "character": "角色1",
+              "text": "我铁定跟那老妹儿掏心窝子说仨字：俺贼拉稀罕你。",
+              "rawText": "[角色1] 我铁定跟那老妹儿掏心窝子说仨字：俺贼拉稀罕你。"
+            },
+            {
+              "index": 6,
+              "startRaw": "00:00:28,000",
+              "endRaw": "00:00:32,000",
+              "start": "00:00:28.000",
+              "end": "00:00:32.000",
+              "character": "角色1",
+              "text": "要是非得把这份稀罕，给它定个期限的话……",
+              "rawText": "[角色1] 要是非得把这份稀罕，给它定个期限的话……"
+            },
+            {
+              "index": 7,
+              "startRaw": "00:00:32,000",
+              "endRaw": "00:00:35,000",
+              "start": "00:00:32.000",
+              "end": "00:00:35.000",
+              "character": "角色1",
+              "text": "那我就想…… 一万年。",
+              "rawText": "[角色1] 那我就想…… 一万年。"
+            },
+            {
+              "index": 8,
+              "startRaw": "00:00:36,000",
+              "endRaw": "00:00:41,000",
+              "start": "00:00:36.000",
+              "end": "00:00:41.000",
+              "character": "角色2",
+              "text": "我的意中人儿呐，那必须是盖世英雄。",
+              "rawText": "[角色2] 我的意中人儿呐，那必须是盖世英雄。"
+            },
+            {
+              "index": 9,
+              "startRaw": "00:00:41,000",
+              "endRaw": "00:00:45,000",
+              "start": "00:00:41.000",
+              "end": "00:00:45.000",
+              "character": "角色2",
+              "text": "早晚有一天，他得黄袍加身来娶我。",
+              "rawText": "[角色2] 早晚有一天，他得黄袍加身来娶我。"
+            },
+            {
+              "index": 10,
+              "startRaw": "00:00:45,000",
+              "endRaw": "00:00:50,000",
+              "start": "00:00:45.000",
+              "end": "00:00:50.000",
+              "character": "角色2",
+              "text": "开头儿我猜着了，可就这个结局…… 我是万万没料到。",
+              "rawText": "[角色2] 开头儿我猜着了，可就这个结局…… 我是万万没料到。"
+            },
+            {
+              "index": 11,
+              "startRaw": "00:00:51,000",
+              "endRaw": "00:00:54,000",
+              "start": "00:00:51.000",
+              "end": "00:00:54.000",
+              "character": "角色2",
+              "text": "你现在说这些有嘛用啊？",
+              "rawText": "[角色2] 你现在说这些有嘛用啊？"
+            },
+            {
+              "index": 12,
+              "startRaw": "00:00:54,000",
+              "endRaw": "00:00:58,000",
+              "start": "00:00:54.000",
+              "end": "00:00:58.000",
+              "character": "角色2",
+              "text": "当初不懂珍惜，这会儿后悔，晚啦。",
+              "rawText": "[角色2] 当初不懂珍惜，这会儿后悔，晚啦。"
+            },
+            {
+              "index": 13,
+              "startRaw": "00:00:59,000",
+              "endRaw": "01:00:02,000",
+              "start": "00:00:59.000",
+              "end": "01:00:02.000",
+              "character": "角色2",
+              "text": "一万年？你这不纯属做梦嘛。",
+              "rawText": "[角色2] 一万年？你这不纯属做梦嘛。"
+            },
+            {
+              "index": 14,
+              "startRaw": "01:00:02,000",
+              "endRaw": "01:00:07,000",
+              "start": "01:00:02.000",
+              "end": "01:00:07.000",
+              "character": "角色2",
+              "text": "人这一辈子就短短几十年，爱恨纠葛，一眨眼就过去啦。",
+              "rawText": "[角色2] 人这一辈子就短短几十年，爱恨纠葛，一眨眼就过去啦。"
+            },
+            {
+              "index": 15,
+              "startRaw": "01:00:07,000",
+              "endRaw": "01:00:10,000",
+              "start": "01:00:07.000",
+              "end": "01:00:10.000",
+              "character": "角色2",
+              "text": "眼前的人你都留不住，还扯嘛天长地久？",
+              "rawText": "[角色2] 眼前的人你都留不住，还扯嘛天长地久？"
+            },
+            {
+              "index": 16,
+              "startRaw": "01:00:10,000",
+              "endRaw": "01:00:14,000",
+              "start": "01:00:10.000",
+              "end": "01:00:14.000",
+              "character": "角色2",
+              "text": "穿上美团，你就不能好好爱我；放下美团，你又养不起我。",
+              "rawText": "[角色2] 穿上美团，你就不能好好爱我；放下美团，你又养不起我。"
+            },
+            {
+              "index": 17,
+              "startRaw": "01:00:14,000",
+              "endRaw": "01:00:17,000",
+              "start": "01:00:14.000",
+              "end": "01:00:17.000",
+              "character": "角色2",
+              "text": "从头到尾啊，你压根儿就没得选。",
+              "rawText": "[角色2] 从头到尾啊，你压根儿就没得选。"
+            }
+          ],
+          "chars": [
+            {
+              "name": "角色1",
+              "color": "#f59e0b"
+            },
+            {
+              "name": "角色2",
+              "color": "#10b981"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 157,
+      "type": "Easy Use Load Srt Batch",
+      "pos": [
+        -11.09990375485882,
+        2592.1769660479126
+      ],
+      "size": [
+        270,
+        286
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "索引",
+          "type": "INT",
+          "widget": {
+            "name": "索引"
+          },
+          "link": 191
+        }
+      ],
+      "outputs": [
+        {
+          "name": "字幕文本",
+          "type": "STRING",
+          "links": [
+            192,
+            198
+          ]
+        },
+        {
+          "name": "文件名",
+          "type": "STRING",
+          "links": [
+            185
+          ]
+        },
+        {
+          "name": "角色名",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "输出路径",
+          "type": "STRING",
+          "links": [
+            184,
+            190,
+            194
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Easy Use Load Srt Batch"
+      },
+      "widgets_values": [
+        "顺序SRT",
+        0,
+        0,
+        "字幕批次 001",
+        "C:\\Users\\41456\\Downloads\\Video\\分批字幕",
+        "移除时间输出",
+        "移除角色标签",
+        true
+      ]
+    },
+    {
+      "id": 161,
+      "type": "ShowText|pysssss",
+      "pos": [
+        226.7905820539216,
+        3061.1671053231426
+      ],
+      "size": [
+        318,
+        160.00003051757815
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 194
+        }
+      ],
+      "outputs": [
+        {
+          "label": "字符串",
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "1.2.5",
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "C:\\Users\\41456\\Downloads\\Video\\分批字幕\\角色1\\"
+      ]
+    },
+    {
+      "id": 156,
+      "type": "LoadAudio",
+      "pos": [
+        681.2080186588826,
+        2209.393085709756
+      ],
+      "size": [
+        270,
+        136
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "音频",
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            189
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "蜡笔小新.mp3",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 166,
+      "type": "LoadAudio",
+      "pos": [
+        678.0258936894601,
+        2401.5929197266883
+      ],
+      "size": [
+        270,
+        136
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "音频",
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            209
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "天津话.wav",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 155,
+      "type": "Easy Use Dubbing Automation",
+      "pos": [
+        1145.594736321697,
+        2207.265886286388
+      ],
+      "size": [
+        390.31999999999994,
+        478.78
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "配音1_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 189
+        },
+        {
+          "name": "配音2_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 209
+        },
+        {
+          "name": "配音3_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音4_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音5_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音6_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音7_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音8_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音9_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "配音10_音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "兜底音频",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "触发路径",
+          "type": "STRING",
+          "widget": {
+            "name": "触发路径"
+          },
+          "link": 190
+        }
+      ],
+      "outputs": [
+        {
+          "name": "匹配音频",
+          "type": "AUDIO",
+          "links": [
+            200,
+            210
+          ]
+        },
+        {
+          "name": "匹配路径",
+          "type": "STRING",
+          "links": []
+        },
+        {
+          "name": "是否命中",
+          "type": "BOOLEAN",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Easy Use Dubbing Automation"
+      },
+      "widgets_values": [
+        "",
+        "文件夹匹配",
+        "C:\\Users\\41456\\Downloads\\Video\\分批字幕\\角色1\nC:\\Users\\41456\\Downloads\\Video\\分批字幕\\角色2\n\n"
+      ]
+    },
+    {
+      "id": 145,
+      "type": "TDQwen3TTSModelLoader",
+      "pos": [
+        1325.0867763188999,
+        2908.3293478955507
+      ],
+      "size": [
+        296.3169921875,
+        178
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "QWEN3_TTS_MODEL",
+          "links": [
+            176
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TDQwen3TTSModelLoader"
+      },
+      "widgets_values": [
+        "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+        "fp16",
+        "cuda",
+        "sdpa",
+        false,
+        "ModelScope"
+      ]
+    },
+    {
+      "id": 150,
+      "type": "Easy Use Save Audio Batch",
+      "pos": [
+        2214.460242903811,
+        2545.1078810404506
+      ],
+      "size": [
+        270,
+        294
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "音频",
+          "type": "AUDIO",
+          "link": 202
+        },
+        {
+          "name": "输出路径",
+          "type": "STRING",
+          "widget": {
+            "name": "输出路径"
+          },
+          "link": 184
+        },
+        {
+          "name": "文件名",
+          "type": "STRING",
+          "widget": {
+            "name": "文件名"
+          },
+          "link": 185
+        }
+      ],
+      "outputs": [
+        {
+          "name": "音频",
+          "type": "AUDIO",
+          "links": [
+            188
+          ]
+        },
+        {
+          "name": "文件路径",
+          "type": "STRING",
+          "links": [
+            182
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Easy Use Save Audio Batch"
+      },
+      "widgets_values": [
+        44100,
+        "[time(%Y-%m-%d)]",
+        "0",
+        "_",
+        "_",
+        4,
+        "否",
+        "mp3",
+        "前缀作为文件名",
+        "是"
+      ]
+    },
+    {
+      "id": 144,
+      "type": "TDQwen3TTSVoiceClone",
+      "pos": [
+        1721.343390796042,
+        3048.578432790746
+      ],
+      "size": [
+        400,
+        210
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "QWEN3_TTS_MODEL",
+          "link": 176
+        },
+        {
+          "name": "ref_audio",
+          "type": "AUDIO",
+          "link": 200
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 207
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            178,
+            201,
+            202
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TDQwen3TTSVoiceClone"
+      },
+      "widgets_values": [
+        "我是地道的天津人。",
+        "Chinese",
+        "说二十多岁的小伙没车没房，这不很正常吗？出校门才几年呢？参加工作才几年呢，那没车没房再正常不过了，穷不是结不了婚的原罪呀。",
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      15,
+      24,
+      0,
+      22,
+      0,
+      "FLOW_CONTROL"
+    ],
+    [
+      17,
+      25,
+      0,
+      24,
+      0,
+      "INT"
+    ],
+    [
+      18,
+      22,
+      0,
+      26,
+      0,
+      "*"
+    ],
+    [
+      47,
+      5,
+      0,
+      40,
+      0,
+      "AUDIO"
+    ],
+    [
+      62,
+      42,
+      1,
+      10,
+      0,
+      "STRING"
+    ],
+    [
+      122,
+      42,
+      0,
+      91,
+      0,
+      "AUDIO"
+    ],
+    [
+      123,
+      24,
+      1,
+      99,
+      0,
+      "INT"
+    ],
+    [
+      125,
+      101,
+      0,
+      102,
+      0,
+      "STRING"
+    ],
+    [
+      126,
+      104,
+      0,
+      103,
+      0,
+      "IMAGE"
+    ],
+    [
+      127,
+      103,
+      0,
+      105,
+      0,
+      "MASK"
+    ],
+    [
+      147,
+      24,
+      1,
+      131,
+      0,
+      "INT"
+    ],
+    [
+      148,
+      131,
+      0,
+      126,
+      0,
+      "STRING"
+    ],
+    [
+      149,
+      131,
+      1,
+      42,
+      2,
+      "STRING"
+    ],
+    [
+      150,
+      131,
+      3,
+      40,
+      11,
+      "STRING"
+    ],
+    [
+      151,
+      131,
+      3,
+      42,
+      1,
+      "STRING"
+    ],
+    [
+      155,
+      131,
+      3,
+      84,
+      0,
+      "STRING"
+    ],
+    [
+      161,
+      131,
+      0,
+      67,
+      0,
+      "STRING"
+    ],
+    [
+      164,
+      139,
+      0,
+      136,
+      0,
+      "AUDIO"
+    ],
+    [
+      167,
+      141,
+      0,
+      140,
+      0,
+      "EASY_INDEXTTS_MODEL"
+    ],
+    [
+      169,
+      140,
+      0,
+      139,
+      0,
+      "EASY_INDEXTTS_MODEL"
+    ],
+    [
+      171,
+      40,
+      0,
+      139,
+      1,
+      "AUDIO"
+    ],
+    [
+      173,
+      139,
+      0,
+      42,
+      0,
+      "AUDIO"
+    ],
+    [
+      174,
+      126,
+      0,
+      139,
+      4,
+      "STRING"
+    ],
+    [
+      175,
+      139,
+      0,
+      22,
+      1,
+      "AUDIO"
+    ],
+    [
+      176,
+      145,
+      0,
+      144,
+      0,
+      "QWEN3_TTS_MODEL"
+    ],
+    [
+      178,
+      144,
+      0,
+      146,
+      0,
+      "AUDIO"
+    ],
+    [
+      179,
+      148,
+      0,
+      147,
+      0,
+      "*"
+    ],
+    [
+      180,
+      153,
+      0,
+      148,
+      0,
+      "FLOW_CONTROL"
+    ],
+    [
+      182,
+      150,
+      1,
+      149,
+      0,
+      "STRING"
+    ],
+    [
+      184,
+      157,
+      3,
+      150,
+      1,
+      "STRING"
+    ],
+    [
+      185,
+      157,
+      1,
+      150,
+      2,
+      "STRING"
+    ],
+    [
+      187,
+      152,
+      0,
+      153,
+      0,
+      "INT"
+    ],
+    [
+      188,
+      150,
+      0,
+      154,
+      0,
+      "AUDIO"
+    ],
+    [
+      189,
+      156,
+      0,
+      155,
+      0,
+      "AUDIO"
+    ],
+    [
+      190,
+      157,
+      3,
+      155,
+      11,
+      "STRING"
+    ],
+    [
+      191,
+      153,
+      1,
+      157,
+      0,
+      "INT"
+    ],
+    [
+      192,
+      157,
+      0,
+      159,
+      0,
+      "STRING"
+    ],
+    [
+      194,
+      157,
+      3,
+      161,
+      0,
+      "STRING"
+    ],
+    [
+      198,
+      157,
+      0,
+      163,
+      0,
+      "STRING"
+    ],
+    [
+      200,
+      155,
+      0,
+      144,
+      1,
+      "AUDIO"
+    ],
+    [
+      201,
+      144,
+      0,
+      148,
+      1,
+      "AUDIO"
+    ],
+    [
+      202,
+      144,
+      0,
+      150,
+      0,
+      "AUDIO"
+    ],
+    [
+      206,
+      163,
+      0,
+      160,
+      0,
+      "STRING"
+    ],
+    [
+      207,
+      160,
+      0,
+      144,
+      2,
+      "STRING"
+    ],
+    [
+      208,
+      165,
+      0,
+      40,
+      1,
+      "AUDIO"
+    ],
+    [
+      209,
+      166,
+      0,
+      155,
+      1,
+      "AUDIO"
+    ],
+    [
+      210,
+      155,
+      0,
+      168,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "qwen3 tts",
+      "bounding": [
+        -457.4558198505528,
+        1805.8678608869145,
+        3591.4808952066655,
+        1616.534437434706
+      ],
+      "color": "#3f789e",
+      "font_size": 160,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "indes tts",
+      "bounding": [
+        -534.5648030473029,
+        -177.57736611939356,
+        3923.245955206665,
+        1659.0656934581805
+      ],
+      "color": "#3f789e",
+      "font_size": 160,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.34212525378885306,
+      "offset": [
+        2755.1767582680504,
+        627.937181921112
+      ]
+    },
+    "frontendVersion": "1.42.15"
+  },
+  "version": 0.4
+}
