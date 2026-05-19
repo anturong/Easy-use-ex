@@ -1,8 +1,9 @@
-<img width="1126" height="1505" alt="image" src="https://github.com/user-attachments/assets/2e2eab42-f5fd-4e3c-b626-b3fb687cba3a" />
+
 
 <img width="3735" height="1454" alt="image" src="https://github.com/user-attachments/assets/850afbc1-c166-4875-9979-5ae56ed96b6e" />
 # Easy-use-ex
 <img width="2588" height="1759" alt="image" src="https://github.com/user-attachments/assets/5bbfc6c1-5c37-4cad-a12e-c63161fc2ddb" />
 <img width="2249" height="1754" alt="image" src="https://github.com/user-attachments/assets/f073fb23-200f-487c-9418-e43170079f04" />
+<img width="566" height="760" alt="image" src="https://github.com/user-attachments/assets/75c34721-8f91-4fa2-acad-153d8205bee4" />
 
 batch txt png srt wav mp3
